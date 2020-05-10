@@ -96,7 +96,7 @@
           </ul>
         </nav>
         
-<section class="assignment">
+<section class="assignment d-flex flex-column">
   <div class="d-flex justify-content-between">
     <div class="d-flex align-items-center cur-point">
       <span class="mr-1 font-weight-bold">All (4)</span>
@@ -105,7 +105,7 @@
     <span class="font-sm text-light">2 comments</span>
   </div>
   
-  <div class="row">
+  <div class="row h-100">
     <div class="col-4">
       <ul class="list-group">
         <li class="list-group-item assignment__list__item active cur-point">
@@ -150,8 +150,8 @@
         </li>
       </ul>
     </div>
-    <div class="col-8 p-0">
-      <div class="card mb-3">
+    <div class="col-8 d-flex flex-column">
+      <div class="card mb-auto">
         <div class="card-header bg-third d-flex justify-content-between align-items-center">
           <div class="card-header-info">
             <div class="font-xs">Chapter Assignment 2 / HTML&CSS</div>
@@ -220,7 +220,7 @@
       </div>
       <!-- editor -->
       <div class="assignment__article__editor">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-header bg-third d-flex align-items-center">
             <span class="cur-point mr-4 d-flex align-items-center">
               <span class="font-weight-bold">Body Text</span>
@@ -240,7 +240,7 @@
             </ul>
           </div>
           <div class="card-body">
-            <textarea name="" id="" placeholder="Replay an answer..."></textarea>
+            <textarea name="" id="" placeholder="Replay an answer..." class="h-100"></textarea>
           </div>
           <div class="d-flex justify-content-end align-items-center mb-3 mr-4">
             <div class="card-features">
@@ -257,22 +257,21 @@
 <script>
   const btn = document.querySelector('#beforeReply')
   const articles = document.querySelectorAll('.assignment__article')
-  const article = articles[articles.length - 1].getBoundingClientRect()
+  const article = articles[articles.length - 1]
   const cancel = document.querySelector('#cancel')
   const editor = document.querySelector('.assignment__article__editor')
-  const textarea = editor.querySelector('textarea')
   btn.addEventListener('click', openEditor)
 
   function openEditor() {
-    editor.style.height = article.height + 90 + 'px'
-    textarea.style.height = article.height - 65 + 'px'
-    editor.classList.add('open')
+    const react = article.getBoundingClientRect()
+    const wh = document.documentElement.clientHeight
+    editor.style.width = article.clientWidth + 32 + 2 + 'px' // 32 是 padding，2 是 border
+    editor.style.height = wh - react.top - 48 + 'px' // 48 is pb
   }
 
   cancel.addEventListener('click', () => {
+    editor.style.width = '0px'
     editor.style.height = '0px'
-    textarea.style.height = '0px'
-    editor.classList.remove('open')
   })
 </script>
       </div>
