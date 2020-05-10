@@ -1,0 +1,183 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: Admin
+name: Admin
+---
+
+<section class="admin d-flex flex-column">
+  <table class="table mb-auto">
+    <thead>
+      <tr>
+        <th scope="col cur-point">ID <i class="material-icons text-primary">arrow_downward</i></th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="cur-point show-demo">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+      <tr class="cur-point">
+        <td>#1</td>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-right">
+          <i class="material-icons cur-point mr-4">remove_red_eye</i>
+          <i class="material-icons cur-point">edit</i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="pagination mb-0 ml-auto">
+    <li class="page-item disabled">
+      <span class="page-link"><</span>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">></a>
+    </li>
+  </ul>
+
+  <!-- modal -->
+  <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-5">
+        <div class="modal-body d-flex p-0 mb-4">
+          <!-- 圖片 -->
+          <div class="modal-body-img mr-4"></div>
+          <!-- 右側資訊 -->
+          <div class="modal-body-content d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>#1</span>
+              <i class="material-icons cur-point" data-dismiss="modal" aria-label="Close">clear</i>
+            </div>
+            <p class="mb-0">admin</p>
+            <div class="font-lg font-weight-bold">Emir Wicks</div>
+            <div class="font-sm text-dark mb-auto">emir.wicks@mail.com</div>
+            <div class="verified d-flex justify-content-between align-items center cur-point">
+              <div class="bg-third py-1 px-2 font-sm rounded">Verified</div>
+              <i class="material-icons text-primary">expand_more</i>
+            </div>
+          </div>
+        </div>
+        <div class="verified-detail d-flex justify-content-end">
+          <button class="btn btn-outline-danger mr-3">Deactivate</button>
+          <button class="btn btn-primary">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  const demo = document.querySelector('.show-demo')
+  const verified = document.querySelector('.verified')
+  const verifiedDetail = document.querySelector('.verified-detail')
+
+  demo.addEventListener('click', () => $('#detail').modal('show'))
+  verified.addEventListener('click', () => {
+    if (verifiedDetail.classList.contains('open')) {
+      verifiedDetail.classList.remove('open')
+      verified.querySelector('i').innerText = 'expand_more'
+    } else {
+      verifiedDetail.classList.add('open')
+      verified.querySelector('i').innerText = 'expand_less'
+    }
+  })
+</script>

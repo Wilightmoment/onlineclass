@@ -1,0 +1,43 @@
+.avatar-rounded {
+  background-position: center center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.font {
+  &-xs {
+    font-size: 0.75rem;
+  }
+  &-sm {
+    font-size: 0.875rem;
+  }
+  &-lg {
+    font-size: 1.5rem;
+  }
+}
+
+.cur-point {
+  cursor: pointer;
+}
+
+.code {
+  color: $primary;
+  background-color: $third;
+  padding: 2px
+}
+
+a.file-download {
+  @extend .text-decoration-none;
+  display: inline-flex;
+  align-items: center;
+  color: $black;
+  border: 1px solid $secondary;
+  background-color: $third;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  i {
+    margin-right: .5rem
+  }
+}
