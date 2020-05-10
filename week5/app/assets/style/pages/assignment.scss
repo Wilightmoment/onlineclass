@@ -1,4 +1,5 @@
 .assignment {
+  height: calc(100vh - 166px);
   // 左側 list
   &__list__item {
     border-color: $third;
@@ -29,17 +30,14 @@
   &__article__editor {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 15px;
     overflow: hidden;
     width: 0%;
     height: 0%;
     transition: .5s;
     textarea {
       resize: none;
-      border: none;
-      width: 100%;
-    }
-    &.open {
+      // border: none;
       width: 100%;
     }
   }
