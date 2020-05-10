@@ -1,11 +1,101 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
-name: Assignment
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="row" style="height: 100vh;">
+      <!-- sidebar -->
+      <div class="sidebar bg-third col p-6 d-flex flex-column align-items-start">
+        <h1 class="mb-5">
+          <a href="#">ANSER</a>
+        </h1>
+        <ul class="list-unstyled mb-auto" style="width: 100%;">
+          <li class="router-link mb-4">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">insert_chart</i>
+              <span class="font-weight-bold text-black">Dashboard</span>
+            </a>
+          </li>
+          <li class="router-link mb-4">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">question_answer</i>
+              <span class="font-weight-bold text-black">Question</span>
+            </a>
+          </li>
+          
+            <li class="router-link active mb-4">
+          
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">assignment</i>
+              <span class="font-weight-bold text-black">Assignment</span>
+            </a>
+          </li>
+          <li class="router-link mb-4">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">video_library</i>
+              <span class="font-weight-bold text-black">Course</span>
+            </a>
+          </li>
+          
+            <li class="router-link mb-4">
+          
+            <a href="admin.html" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">people</i>
+              <span class="font-weight-bold text-black">Admin</span>
+            </a>
+          </li>
+          <li class="router-link mb-4">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+              <i class="material-icons mr-3">settings</i>
+              <span class="font-weight-bold text-black">Settings</span>
+            </a>
+          </li>
+        </ul>
+        <div class="user d-flex align-items-center">
+          <div class="avatar-rounded mr-3" style="background-image: url(https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg);"></div>
+          <div class="user-info">
+            <div class="font-weight-bold">Andy Chen</div>
+            <div class="text-dark font-sm">andy0401@mail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-6">
+        <!-- navbar -->
+        <nav class="navbar navbar-light p-0 mb-5 justify-content-start">
+          <a class="navbar-brand mr-6" href="#">
+            <!-- <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <h2 class="h4 mb-0 font-weight-bold">Assignment</h2>
+          </a>
+          <div class="navbar-action d-flex align-items-center font-weight-bold cur-point mr-auto">
+            
+                <span class="mr-2">All Courses</span>
+                <i class="material-icons text-primary">keyboard_arrow_down</i>
+                
+          </div>
+          <ul class="navbar__features d-flex align-items-center list-unstyled mb-0">
+            <li class="navbar__features-feature cur-point mr-4">
+              <i class="material-icons">search</i>
+            </li>
+            <li class="navbar__features-feature cur-point">
+              <i class="material-icons">notifications_active</i>
+            </li>
+          </ul>
+        </nav>
+        
 <section class="assignment">
   <div class="d-flex justify-content-between">
     <div class="d-flex align-items-center cur-point">
@@ -185,3 +275,9 @@ name: Assignment
     editor.classList.remove('open')
   })
 </script>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
